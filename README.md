@@ -98,14 +98,6 @@ Go back to Client-1 and try to ping it. Observe that it works <p/>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
   
 ![Screen Shot 2024-09-30 at 7 12 44 PM](https://github.com/user-attachments/assets/b74b5734-ea03-480f-9817-0a8e3fc8bf06)
 
@@ -135,6 +127,24 @@ Go back to Client-1 and ping “mainframe” again. Observe that it still pings 
 <p>
 Flush the DNS cache (ipconfig /flushdns) <p/>
   Open Powershell as an Admin to flush dns
+</p>
+<br />
+
+<p>
+  
+![Screen Shot 2024-09-30 at 7 31 27 PM](https://github.com/user-attachments/assets/b31d6b21-1444-49e2-b252-3d9ddbda5e25)
+
+</p>
+<p>
+  Attempt to ping “mainframe” again. Observe the address of the new record is showing up
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
 
