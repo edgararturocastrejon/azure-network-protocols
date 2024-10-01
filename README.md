@@ -55,10 +55,14 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![Screen Shot 2024-10-01 at 5 46 58 PM](https://github.com/user-attachments/assets/ed7d0983-86eb-46ad-8366-0a90e314c7a2)
+![Screen Shot 2024-10-01 at 5 47 50 PM](https://github.com/user-attachments/assets/672c94d7-ff5a-4e4a-8c5a-3b8564fd696d)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  4) Create Ubuntu VM (make sure the size is also 2 vcpus) <p/>
+    Go to Networking before creating and make sure it's on the Virtual Network you created
 </p>
 <br />
 
