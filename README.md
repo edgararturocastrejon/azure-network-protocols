@@ -90,11 +90,10 @@ Go back to Client-1 and try to ping it. Observe that it works <p/>
 <p>
     <h3> Local DNS Cache Exercise </h3>
   
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![Screen Shot 2024-09-30 at 7 08 53 PM](https://github.com/user-attachments/assets/01b6aaae-6a6c-46c5-b8ce-a0e3ef9c5b12)
 
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<p>Go back to DC-1 and change mainframe’s record address to 8.8.8.8
 </p>
 <br />
 
@@ -107,26 +106,35 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+![Screen Shot 2024-09-30 at 7 12 44 PM](https://github.com/user-attachments/assets/b74b5734-ea03-480f-9817-0a8e3fc8bf06)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Go back to Client-1 and ping “mainframe” again. Observe that it still pings the old address
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+![Screen Shot 2024-09-30 at 7 19 31 PM](https://github.com/user-attachments/assets/c2d4a77b-4e00-4003-981c-fbc9e8ad3e4a)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  Observe the local dns cache (ipconfig /displaydns)
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+![Screen Shot 2024-09-30 at 7 25 35 PM](https://github.com/user-attachments/assets/a4bf5821-8378-40a8-9c80-f310d738960c)
+![Screen Shot 2024-09-30 at 7 26 07 PM](https://github.com/user-attachments/assets/1bfa4608-1301-448b-8f6a-269ed300dc0a)
+
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Flush the DNS cache (ipconfig /flushdns) <p/>
+  Open Powershell as an Admin to flush dns
 </p>
 <br />
 
