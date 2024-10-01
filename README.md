@@ -81,10 +81,14 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+![Screen Shot 2024-10-01 at 6 15 06 PM](https://github.com/user-attachments/assets/bf83c01c-a8c3-4aaf-87ce-12e0dbe1d26f)
+![Screen Shot 2024-10-01 at 6 17 57 PM](https://github.com/user-attachments/assets/efba924f-90b9-4692-8ef9-2c0f2ae070b4)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  6) Open Wireshark and start packet capture
+    Within Wireshark, filter for ICMP traffic only
 </p>
 <br />
 
