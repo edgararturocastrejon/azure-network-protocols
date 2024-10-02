@@ -153,6 +153,60 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <br />
 
 <p>
+
+![Screen Shot 2024-10-01 at 7 21 34 PM](https://github.com/user-attachments/assets/d839d445-4c87-4cc0-94f0-63c1233ee0e3)
+
+</p>
+<p>
+  1) Filter for SSH traffic only
+</p>
+<br />
+
+<p>
+  
+![Screen Shot 2024-10-01 at 7 27 31 PM](https://github.com/user-attachments/assets/89809c31-c943-43fd-a1f7-57e6ac545410)
+
+
+</p>
+<p>
+  2) From your Windows 10 VM, “SSH into” your Ubuntu Virtual Machine (via its private IP address) <p/>
+    Open PowerShell, and type: ssh labuser@<private IP address> (Observe the ssh traffic) <p/>
+      -------------------------------------------------------------------------------- <p/>
+      (Observe DHCP Traffic)
+</p>
+<br />
+
+<p>
+  
+![Screen Shot 2024-10-01 at 7 36 05 PM](https://github.com/user-attachments/assets/c0346944-113a-45e0-9c67-ef3624872587)
+
+</p>
+<p>
+  1) Back in Wireshark, filter for DHCP traffic only
+</p>
+<br />
+
+<p>
+
+![Screen Shot 2024-10-01 at 7 38 15 PM](https://github.com/user-attachments/assets/e89a86ff-34d8-49a0-8057-3fbc9e4df186)
+
+</p>
+<p>
+  2) From your Windows 10 VM, attempt to issue your VM a new IP address from the command line <p/>
+      Open PowerShell as admin and run: ipconfig /renew <p/>
+          Observe the DHCP traffic appearing in WireShark
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+<p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
