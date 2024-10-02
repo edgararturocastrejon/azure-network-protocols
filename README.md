@@ -108,34 +108,47 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![Screen Shot 2024-10-01 at 6 52 42 PM](https://github.com/user-attachments/assets/d44cd41e-fbc8-4477-a6c3-9414b4417600)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ 1) Now we can make some firewall configurations to deny any ICMP traffic. To do this I will enter a perpetual ping command into PowerShell 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+![Screen Shot 2024-10-01 at 7 04 46 PM](https://github.com/user-attachments/assets/995ca50b-7d37-46f9-8e1f-6a01bfe9d4d2)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ 2) Next, I will go to Ubuntu VM (linux-vm) network security group and create a new inbound security rule denying all ICMP traffic making sure to put its priorty highest, so it will take precedence before all other rules
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+![Screen Shot 2024-10-01 at 7 06 05 PM](https://github.com/user-attachments/assets/3f3a223a-c0f8-4bc0-8555-8d596d6d15ad)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  Going back to our Windows 10 VM we can see that the ICMP echo requests aren't getting any responses due to the security change
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+![Screen Shot 2024-10-01 at 7 08 34 PM](https://github.com/user-attachments/assets/e91e26b3-dbd3-4f6f-9070-9b1bc51d0295)
+![Screen Shot 2024-10-01 at 7 08 56 PM](https://github.com/user-attachments/assets/3c89d533-7420-4e22-90cb-c7c3ab941cab)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  3) To revert the change I can either switch the inbound rule to "Allow" instead of "Deny" or delete the rule <p/>
+    Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line Ping activity (should start working) <p/>
+  ------------------------------------------------------------------------------------ <p/>
+  (Observe SSH Traffic)
+
 </p>
 <br />
 
