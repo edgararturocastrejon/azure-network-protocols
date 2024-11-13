@@ -29,7 +29,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 </p>
 <p>
-  !) Create Resource Group in Azure
+  1) Create Resource Group in Azure
 </p>
 <br />
 
